@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.Scene2">
+   <children>
+      <TextField fx:id="TitleBox" layoutX="80.0" layoutY="68.0" />
+      <Button layoutX="274.0" layoutY="68.0" mnemonicParsing="false" onAction="#SetTitleClicked" text="Set Title" />
+      <TextField fx:id="Year" layoutX="80.0" layoutY="134.0" prefHeight="25.0" prefWidth="44.0" text="YYYY" />
+      <TextField fx:id="Month" layoutX="133.0" layoutY="134.0" prefHeight="25.0" prefWidth="38.0" text="MM" />
+      <TextField fx:id="Date" layoutX="184.0" layoutY="134.0" prefHeight="25.0" prefWidth="38.0" text="DD" />
+      <TextField fx:id="Description" layoutX="235.0" layoutY="134.0" prefHeight="25.0" prefWidth="461.0" text="Description" />
+      <Button layoutX="824.0" layoutY="134.0" mnemonicParsing="false" onAction="#AddClicked" text="Add" />
+      <TableView fx:id="Table" layoutX="97.0" layoutY="178.0" prefHeight="424.0" prefWidth="763.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Due" />
+          <TableColumn minWidth="0.0" prefWidth="606.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button layoutX="606.0" layoutY="68.0" mnemonicParsing="false" onAction="#DeleteListClicked" text="Delete List" />
+      <Button layoutX="14.0" layoutY="354.0" mnemonicParsing="false" onAction="#OnlyShowCompleteClicked" prefHeight="91.0" prefWidth="72.0" text="Only Show Complete" wrapText="true" />
+      <Button layoutX="14.0" layoutY="478.0" mnemonicParsing="false" onAction="#OnlyShowNotCompleteClicked" prefHeight="91.0" prefWidth="72.0" text="Only Show Not Complete" wrapText="true" />
+      <Button layoutX="14.0" layoutY="222.0" mnemonicParsing="false" onAction="#ShowAllClicked" prefHeight="91.0" prefWidth="72.0" text="Show All" wrapText="true" />
+      <Button layoutX="383.0" layoutY="68.0" mnemonicParsing="false" onAction="#SaveLocallyClicked" text="Save Locally" />
+      <Button layoutX="483.0" layoutY="68.0" mnemonicParsing="false" onAction="#SaveExternallyClicked" text="Save Externally" />
+      <CheckBox fx:id="CompletedBox" layoutX="716.0" layoutY="138.0" mnemonicParsing="false" text="Completed" />
+   </children>
+</AnchorPane>

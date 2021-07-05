@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.Scene1">
+   <children>
+      <Button layoutX="24.0" layoutY="136.0" mnemonicParsing="false" onAction="#AddNewClicked" prefHeight="35.0" prefWidth="147.0" text="Add New List" />
+      <Button layoutX="24.0" layoutY="235.0" mnemonicParsing="false" onAction="#LoadPrevClicked" prefHeight="35.0" prefWidth="147.0" text="Load Previous" />
+      <Button layoutX="390.0" layoutY="119.0" mnemonicParsing="false" onAction="#SaveAllExClicked" prefHeight="35.0" prefWidth="147.0" text="Save All Externally" />
+      <Button layoutX="390.0" layoutY="183.0" mnemonicParsing="false" onAction="#LoadSingleClicked" prefHeight="35.0" prefWidth="147.0" text="Load Single Externally" />
+      <Button layoutX="390.0" layoutY="253.0" mnemonicParsing="false" onAction="#LoadMultipleClicked" prefHeight="35.0" prefWidth="147.0" text="Load Multiple Externally" />
+      <Button disable="true" layoutX="72.0" layoutY="346.0" mnemonicParsing="false" onAction="#FindClicked" text="Find" />
+      <TextField fx:id="TitleAskerBox" disable="true" layoutX="23.0" layoutY="295.0" text="Enter Title to Find" />
+   </children>
+</AnchorPane>
